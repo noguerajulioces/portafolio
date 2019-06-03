@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+  <h1 class="text-center">Projects</h1>
+
+  <div class="row">
+  <% @projects.each do |project| %>
+    <div class="col-4">
+      <div class="card" style="width: 18rem; padding: 20px;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%= project.title %></h5>
+          <p class="card-text"><%= project.description %>
+          <br> URL: <%= project.url %>
+          </p>
+          <p><%= link_to 'Show', project %> 
+          <%= link_to 'Edit', edit_project_path(project) %>
+          <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <%= link_to 'New Project', new_project_path %>
+</div>
