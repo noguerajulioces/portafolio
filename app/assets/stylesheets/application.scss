@@ -21,18 +21,23 @@
      height: 100%;
  }
 
+ /* Margen de 25 */
  .margin-25{
      margin: 25px;
  }
 
- .background-gray{
-    background-color: #f2f2f2;
- }
-
+/* Zoom for the Social Media Icons */
  .zoom{
     transition: transform .2s;
  }
 
  .zoom:hover{
     transform: scale(1.5);
+ }
+
+ /* For put elements in the center */
+ .image-center{
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }

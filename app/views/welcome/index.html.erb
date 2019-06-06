@@ -1,14 +1,15 @@
+<!--Here is the jumbotron where I show me photo and talk about me-->
 <div class="container">
     <div class="jumbotron jumbotron-fluid margin-25">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 image-center">
                     <%= image_tag 'me2.jpg', {:style => "width:300px; height:300px;"} %>
                 </div>
                 <div class="col-8">
                     <h1 class="display-6">About me</h1>
                     <hr>
-                    <p class="lead">Hi!, My name is Julio Noguera , I'm a Computer Engineer graduated from Fermín Toro University in Cabudare, Edo. Lara - Venezuela. I have been developing web and mobile applications mainly for more than 3 years the Angular technology. I feel passionate about learning, sharing my knowledge, empowerment feminine and of course, technology . Currently I work as a Consultant in Accenture Colombia , and as a full-time mother of a beautiful baby named Thomas .
+                    <p class="lead">Hi!, My name is Julio Noguera , I'm a Computer Engineer graduated from National University of Itapúa in Encarnación, Itapúa - Paraguay. I have been developing web and mobile applications mainly for more than 3 years the Angular technology. I feel passionate about learning, sharing my knowledge, empowerment feminine and of course, technology . Currently I work as a Consultant in Accenture Colombia , and as a full-time mother of a beautiful baby named Thomas .
 
 Skills: - Angular - Ionic - Javascript - Laravel - Firebase - Nodejs - Accessibility - Scrum Master Certified
 
@@ -19,7 +20,7 @@ Others Skills: - Leadership - Dynamism - Community Lover - TeamWork - Design Thi
 </div>
 
 <hr>
-
+<!--Here it's my social media-->
 <div class="text-center margin-25">
     <%= link_to 'http://twitter.com/@noguerajulioces', target: '_blank', class: 'margin-25' do %>
         <%= image_tag("twitter", {:style => "width:30px;", class: 'zoom'}) %>
@@ -38,12 +39,26 @@ Others Skills: - Leadership - Dynamism - Community Lover - TeamWork - Design Thi
     <% end %>
 </div>
 <hr>
-
+<!--Here it's my last activities in my page-->
 <div class="">
     <h5 class="text-center margin-25">Last Activities</h5>
-    <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="row">
+        <div class="col-4">
+            <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="col-8">
+            <h4>Last articles</h4>
+            <% @articles.last(3).each do |article| %>
+                <%= article.title %>
+                <%= article.body %><br>
+            <% end %> 
+            <hr>
+            <h4>Last projects</h4>
+            <% @projects.last(3).each do |article| %>
+                <%= article.title %>
+                <%= article.description %><br>
+            <% end %> 
+        <div>
 </div>
 
      
