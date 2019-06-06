@@ -1,14 +1,25 @@
-<div class="row">
-    <div class="col-8">
-        <div class="container">
-            <div class="card margin-25">
-                <div class="card-body">
-                    <h1>About me</h1>
-                    <hr>
-                    <p>'Ani rekyhyjéti rejavyrô guarâ, Ekyhyje nereñeha'âirô guarâ'</p>
-                    <p>'No tengas miedo en equivocarte, ten en no intentarlo'</p>
+<div class="container">
+<div class="jumbotron jumbotron-fluid margin-25">
+  <div class="container">
+    
+    
+    <div class="row">
+        <div class="col-4">
+            <%= image_tag 'me2.jpg', {:style => "width:300px; height:300px;"}%>
+        </div>
+        <div class="col-8">
+            <h1 class="display-6">About me</h1>
+            <hr>
+            <p class="lead">'Ani rekyhyjéti rejavyrô guarâ, Ekyhyje nereñeha'âirô guarâ'</p>
+        </div>
+    </div>
 
-                    <div class="text-center margin-25">
+    
+    </div>
+</div>
+
+<hr>
+        <div class="text-center margin-25">
                         <%= link_to 'http://twitter.com/@noguerajulioces', target: '_blank', class: 'margin-25' do %>
                             <%= image_tag("twitter", {:style => "width:30px;"}) %>
                         <% end %>
@@ -25,14 +36,11 @@
                             <%= image_tag("instagram", {:style => "width:30px;"}) %>
                         <% end %>
                     </div>
-                </div>
-            </div>
+<hr>
+
+            <h5 class="text-center margin-25">Last Activities</h5>
+            <a class="twitter-timeline" data-width="350" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <a class="twitter-timeline" data-width="350" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" data-width="350" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
         </div>
-    </div>
-    <div class="col-4">
-        <div class="container">
-            <h5 class="text-center margin-25">Últimos tweets</h5>
-            <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
-</div>
