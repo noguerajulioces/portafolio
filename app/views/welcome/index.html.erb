@@ -1,11 +1,38 @@
-<div class="mx-auto center-50">
-    <h1><strong>Julio Noguera</strong></h1>
+<div class="row">
+    <div class="col-8">
+        <div class="container">
+            <div class="card margin-25">
+                <div class="card-body">
+                    <h1>About me</h1>
+                    <hr>
+                    <p>'Ani rekyhyjéti rejavyrô guarâ, Ekyhyje nereñeha'âirô guarâ'</p>
+                    <p>'No tengas miedo en equivocarte, ten en no intentarlo'</p>
 
-    <p>Aquí va un poco sobre mí</p>
-
-    <%= link_to 'Twitter' %>
-    <%= link_to 'Facebook' %>
-    <%= link_to 'Instagram' %>
-    <%= link_to 'Github' %>
-    <%= link_to 'Linkeind' %>
+                    <div class="text-center margin-25">
+                        <%= link_to 'http://twitter.com/@noguerajulioces', target: '_blank', class: 'margin-25' do %>
+                            <%= image_tag("twitter", {:style => "width:30px;"}) %>
+                        <% end %>
+                        <%= link_to 'https://www.facebook.com/julio.noguera.334', target: '_blank', class: 'margin-25' do %>
+                            <%= image_tag("facebook", {:style => "width:30px;"}) %>
+                        <% end %>
+                        <%= link_to 'https://github.com/NogueraJulio24', target: '_blank', class: 'margin-25' do %>
+                            <%= image_tag("github", {:style => "width:30px;"}) %>
+                        <% end %>
+                        <%= link_to 'https://www.linkedin.com/in/noguerajulio/', target: '_blank', class: 'margin-25' do %>
+                            <%= image_tag("linkeind", {:style => "width:30px;"}) %>
+                        <% end %>
+                        <%= link_to 'https://www.instagram.com/@noguerajulioces', target: '_blank', class: 'margin-25' do %>
+                            <%= image_tag("instagram", {:style => "width:30px;"}) %>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="container">
+            <h5 class="text-center margin-25">Últimos tweets</h5>
+            <a class="twitter-timeline" data-width="400" data-height="500" data-dnt="true" data-theme="light" href="https://twitter.com/noguerajulioces?ref_src=twsrc%5Etfw">Tweets by noguerajulioces</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
 </div>
