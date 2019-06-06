@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @articles = Article.all
-    @projects = Project.all
+    @articles = Article.all.order("created_at DESC")
+    @projects = Project.all.order("created_at DESC")
   end
 end

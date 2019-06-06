@@ -48,10 +48,7 @@ Others Skills: - Leadership - Dynamism - Community Lover - TeamWork - Design Thi
         </div>
         <div class="col-8">
             <h4>Last articles</h4>
-            <% @articles.last(3).each do |article| %>
-                <%= article.title %>
-                <%= article.body %><br>
-            <% end %> 
+            <%= render 'welcome/cards'%>
             <hr>
             <h4>Last projects</h4>
             <% @projects.last(3).each do |article| %>
