@@ -70,3 +70,4 @@ gem 'jquery-rails'
 # for authentication
 gem 'devise'
 
+gem "paperclip", "~> 6.0.0"
